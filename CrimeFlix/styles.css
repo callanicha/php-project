@@ -1,0 +1,236 @@
+/*root*/
+:root {
+    --primary: #141414;
+    --light: #F3F3F3;
+    --dark: 	#686868;
+  }
+  
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 0px 0px 0px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+
+/* HEADER */
+header {
+    padding: 20px 20px 0 20px;
+    position: fixed;
+    top: 0;
+    display: grid;  
+    grid-gap:5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     "nt mn mn sb . . . "; 
+    background-color: var(--primary);
+    color: var(--light);
+    width: 100%;
+    margin-bottom: 0px;  
+  }
+.netflixLogo {
+    grid-area: nt;
+    object-fit: cover;
+    width: 200px;
+    max-height: 100%;
+    
+    padding-left: 30px;
+    padding-top: 0px;  
+  }
+
+.netflixLogo img {  
+    height: 60px;     
+  }
+#logo {
+    color: #E50914;  
+    margin: 0; 
+    padding: 0; 
+  }
+.name {
+    grid-area: sb;
+    padding: 0 40px 0 40px;
+}
+a {
+    color: var(--light);
+    text-decoration: none;
+    margin: 5px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+  }
+article {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #141414;
+  }
+
+
+/* Form */
+.welcome {
+    color: var(--light);
+    text-decoration: none;
+    margin: 5px;
+    font-size: 25px;
+    padding-left: 500px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+
+.btn {
+    padding: 10px;
+    margin: 30px 0px 0px 0px;
+    font-size: 15px;
+    color: var(--light);
+    background: #E50914;
+    border: none;
+    border-radius: 5px;
+}
+.main-container {
+    padding: 50px;
+}
+
+/* adding */
+.recommendation_form {
+    padding: 20px;
+    background-color: var(--primary);
+    border: 1px var(--dark);
+}
+
+.recommendation_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation_form label {
+    margin: 10px 0 5px;
+}
+
+.recommendation_form input[type="text"],
+.recommendation_form input[type="number"],
+.recommendation_form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.recommendation_form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #E50914;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.recommendation_form input[type="submit"]:hover {
+    background-color: #ff3333;
+}
+
+.botton:active {
+    background-color: #420000;
+    box-shadow: 0 5px var(--dark);
+    transform: translateY(4px);
+}
+
+.recommendation_form h1{
+    width: 97%;
+    margin: auto;
+    color: var(--light);
+    background-color: #E50914;
+    text-align: center;
+    vertical-align: baseline;
+    border: none;
+    border-bottom: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation_form {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--light);
+    background: var(--primary);
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* display */
+.box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+  
+.box a {
+    transition: transform .3s;  
+}
+  
+.box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);  
+    transform: scale(1.4);
+}
+
+
+
+/* additional functionality */
+.logout p {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    color: #3c763d;
+    background: #dff9d8;
+    border:1px solid #3c763d;
+    margin-bottom: 20px;
+}
+
+
