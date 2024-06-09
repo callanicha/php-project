@@ -5,6 +5,7 @@
     if (isset($_POST['login_user'])) {
         $username = $_POST["username"];
         $password = $_POST["password"];
+        $conn = Connection::getConnection();
         $sql = "SELECT * FROM user WHERE username = :username AND password = :password";
         $query = $conn->prepare($sql);
         $query->bindParam(":username", $username, PDO::PARAM_STR);
